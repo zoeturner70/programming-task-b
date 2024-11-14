@@ -9,6 +9,9 @@ def restock_inventory(available_items, inventory_records, current_day):
     if current_day == 0:
         restock_units = 2000
 
+        inventory_records += [[current_day, 0, restock_units, available_items]]
+
+
 
     # Every seven days,
     # take away the available items from 2000 to work out what's to be restocked
@@ -17,9 +20,9 @@ def restock_inventory(available_items, inventory_records, current_day):
         # Now it has been restocked,
         # the available items is set back to 2000
         available_items = 2000
-        
-    # Appends list "inventory_records" 
-    # Information is added to each column 
+
+        # Appends list "inventory_records" 
+        # Information is added to each column 
         inventory_records += [[current_day, 0, restock_units, available_items]]
 
 
