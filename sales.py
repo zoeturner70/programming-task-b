@@ -19,5 +19,7 @@ available_items:(integer) This function returns this integer which updates the a
 The function will also update the inventory_records (For restocking) for a  given current day. 
 
     '''
+
+    
     
     return available_items
